@@ -1,11 +1,8 @@
 node default {
-  file {'/tmp/README':
+  file {'/tmp/README.md':
     ensure  => file,
     content => 'This is a readme',
     owner   => 'root',
   }
   
-  file {'/tmp/README':
-    owner => 'root',
-  }
 }
