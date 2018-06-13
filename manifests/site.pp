@@ -1,7 +1,7 @@
 node default {
   file {'/tmp/README.md':
     ensure  => file,
-    content => $os.family, # $(facter os.family)
+    content => $os, # $(facter os)
     owner   => 'root',
   }
   
