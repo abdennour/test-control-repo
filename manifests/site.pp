@@ -1,7 +1,7 @@
 node default {
   file {'/tmp/README.md':
     ensure  => file,
-    content => $fqdn, # $(facter fqdn)
+    content => 'Welcome to ${fqdn}!\n', # $(facter fqdn)
     owner   => 'root',
   }
   
